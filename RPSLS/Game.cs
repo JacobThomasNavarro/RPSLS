@@ -11,13 +11,16 @@ namespace RPSLS
         // member variables (HAS A)
         public ComputerPlayer playerOne;
         public HumanPlayer playerTwo;
-        public string RPSLS;
         public Random rng;
+        public List<string> gestureOptions;
 
         // constructor
         public Game()
         {
-
+            playerOne = new ComputerPlayer();
+            playerTwo = new HumanPlayer();
+            gestureOptions = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
+            rng = new Random();
         }
 
         // member methods (CAN DO)
