@@ -9,13 +9,16 @@ namespace RPSLS
     class ComputerPlayer : Player
     {
         // member variables (HAS A)
-
+        
 
         // constructor
-
+        
 
         // member methods (CAN DO)
-
+        public override void MakeMove()
+        {
+         
+        }
 
     }
 }
