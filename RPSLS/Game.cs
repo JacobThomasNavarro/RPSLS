@@ -31,13 +31,11 @@ namespace RPSLS
             playerOne.ChooseName();
             playerTwo.ChooseName();
 
-            playerOne.MakeMove();
-            playerTwo.MakeMove();
-
-           
-
             while (playerOne.score < 2 && playerTwo.score < 2)
             {
+                playerOne.MakeMove();
+                playerTwo.MakeMove();
+
                 if ((playerOne.gesture == "rock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "rock" && playerTwo.gesture == "lizard"))
                 {
                     playerOne.score++;
