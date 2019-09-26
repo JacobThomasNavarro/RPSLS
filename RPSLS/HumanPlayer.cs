@@ -17,12 +17,12 @@ namespace RPSLS
         // member methods (CAN DO)
         public override void MakeMove()
         {
-            Console.WriteLine("Choose a gesture!");
+            Console.WriteLine("Human player choose a gesture!");
             gesture = Console.ReadLine();
         }
         public override void ChooseName()
         {
-            Console.WriteLine("Choose a name!");
+            Console.WriteLine("Human choose a name!");
             name = Console.ReadLine();
         }
     }

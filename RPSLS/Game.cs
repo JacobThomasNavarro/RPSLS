@@ -16,8 +16,6 @@ namespace RPSLS
         // constructor
         public Game()
         {
-            playerOne = new ComputerPlayer();
-            playerTwo = new HumanPlayer();
             gestureOptions = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
         }
 
@@ -30,12 +28,42 @@ namespace RPSLS
 
             CreatePlayers(numberOfPlayers);
 
+            playerOne.ChooseName();
+            playerTwo.ChooseName();
+
             playerOne.MakeMove();
             playerTwo.MakeMove();
 
-            //put gesture comparisons here
-            DisplayCurrentScore();
-            //put gesture comparison here
+           
+
+            while (playerOne.score < 2 && playerTwo.score < 2)
+            {
+                if ((playerOne.gesture == "rock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "rock" && playerTwo.gesture == "lizard"))
+                {
+                    playerOne.score++;
+                }
+                else if ((playerOne.gesture == "scissors" && playerTwo.gesture == "paper") || (playerOne.gesture == "scissor" && playerTwo.gesture == "lizard"))
+                {
+                    playerOne.score++;
+                }
+                else if ((playerOne.gesture == "paper" && playerTwo.gesture == "rock") || (playerOne.gesture == "paper" && playerTwo.gesture == "spock"))
+                {
+                    playerOne.score++;
+                }
+                else if ((playerOne.gesture == "lizard" && playerTwo.gesture == "spock") || (playerOne.gesture == "lizard" && playerTwo.gesture == "paper"))
+                {
+                    playerOne.score++;
+                }
+                else if ((playerOne.gesture == "spock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "spock" && playerTwo.gesture == "rock"))
+                {
+                    playerOne.score++;
+                }
+                else
+                {
+                    playerTwo.score++;
+                }
+                DisplayCurrentScore();
+            }
 
             DisplayGameWinner();
         }
@@ -76,6 +104,33 @@ namespace RPSLS
             {
                 playerOne = new HumanPlayer();
                 playerTwo = new HumanPlayer();
+            }
+        }
+        public void PlayGame()
+        {
+            if((playerOne.gesture == "rock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "rock" && playerTwo.gesture == "lizard"))
+            {
+                playerOne.score++;
+            }
+            else if((playerOne.gesture == "scissors" && playerTwo.gesture == "paper") || (playerOne.gesture == "scissor" && playerTwo.gesture == "lizard"))
+            {
+                playerOne.score++;
+            }
+            else if ((playerOne.gesture == "paper" && playerTwo.gesture == "rock") || (playerOne.gesture == "paper" && playerTwo.gesture == "spock"))
+            {
+                playerOne.score++;
+            }
+            else if ((playerOne.gesture == "lizard" && playerTwo.gesture == "spock") || (playerOne.gesture == "lizard" && playerTwo.gesture == "paper"))
+            {
+                playerOne.score++;
+            }
+            else if ((playerOne.gesture == "spock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "spock" && playerTwo.gesture == "rock"))
+            {
+                playerOne.score++;
+            }
+            else
+            {
+                playerTwo.score++;
             }
         }
 }
