@@ -10,14 +10,17 @@ namespace RPSLS
     {
         // member variables (HAS A)
         public int score;
-       
+        public string name;
+        public string gesture;
+
         // constructor
         public Player()
         {
             score = 0;
         }
-        
+
         // member methods (CAN DO)
-        public abstract void MakeMove(); 
+        public abstract void MakeMove();
+        public abstract void ChooseName();
     }
 }

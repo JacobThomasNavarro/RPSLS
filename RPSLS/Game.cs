@@ -9,9 +9,8 @@ namespace RPSLS
     class Game
     {
         // member variables (HAS A)
-        public ComputerPlayer playerOne;
-        public HumanPlayer playerTwo;
-        public Random rng;
+        public Player playerOne;
+        public Player playerTwo;
         public List<string> gestureOptions;
 
         // constructor
@@ -19,14 +18,14 @@ namespace RPSLS
         {
             playerOne = new ComputerPlayer();
             playerTwo = new HumanPlayer();
-            gestureOptions = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
+            gestureOptions = new List<string>() {"Rock", "Paper", "Scissors", "Lizard", "Spock"};
             rng = new Random();
         }
 
         // member methods (CAN DO)
         public void RunGame() // master method
         {
-
+            // insert methods and code to kick off game
         }
         public void DisplayRules()
         {
@@ -48,5 +47,24 @@ namespace RPSLS
                 Console.WriteLine("Player Two won the game!");
             }
         }
-    }
+        public int GetNumberOfPlayers()
+        {
+            Console.WriteLine("How many players?");
+            int numberOfPlayers = int.Parse(Console.ReadLine());
+            return numberOfPlayers;
+        }
+        public void CreatePlayers(int numberOfplayers)
+        {
+            if (numberOfPlayers == 1)
+            {
+                playerOne = new HumanPlayer();
+                playerTwo = new ComputerPlayer();
+            }
+            else if (numberplayers == 2)
+            {
+                playerOne = new HumanPlayer();
+                playerTwo = new HumanPlayer();
+            }
+        }
+}
 }

@@ -19,7 +19,7 @@ namespace RPSLS
         {
             Console.WriteLine("Please choose your Gesture!");
             Console.WriteLine("Rock, Paper, Scissors, Lizard or Spock.");
-            string gesture = Console.ReadLine();
+            gesture = Console.ReadLine();
 
             switch (gesture)
             {
