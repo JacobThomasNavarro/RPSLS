@@ -17,32 +17,13 @@ namespace RPSLS
         // member methods (CAN DO)
         public override void MakeMove()
         {
-            Console.WriteLine("Please choose your Gesture!");
-            Console.WriteLine("Rock, Paper, Scissors, Lizard or Spock.");
+            Console.WriteLine("Choose a gesture!");
             gesture = Console.ReadLine();
-
-            switch (gesture)
-            {
-                case "Rock":
-                    Console.WriteLine("You chose Rock!");
-                    break;
-                case "Paper":
-                    Console.WriteLine("You chose Paper!");
-                    break;
-                case "Scissors":
-                    Console.WriteLine("You chose Scissors!");
-                    break;
-                case "Lizard":
-                    Console.WriteLine("You chose Lizard!");
-                    break;
-                case "Spock":
-                    Console.WriteLine("You chose Spock!");
-                    break;
-                default:
-                    Console.WriteLine("Not a valid gesture option.");
-                    break;
-            }
         }
-
+        public override void ChooseName()
+        {
+            Console.WriteLine("Choose a name!");
+            name = Console.ReadLine();
+        }
     }
 }
