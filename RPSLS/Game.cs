@@ -18,8 +18,7 @@ namespace RPSLS
         {
             playerOne = new ComputerPlayer();
             playerTwo = new HumanPlayer();
-            gestureOptions = new List<string>() {"Rock", "Paper", "Scissors", "Lizard", "Spock"};
-            rng = new Random();
+            gestureOptions = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
         }
 
         // member methods (CAN DO)
@@ -53,14 +52,14 @@ namespace RPSLS
             int numberOfPlayers = int.Parse(Console.ReadLine());
             return numberOfPlayers;
         }
-        public void CreatePlayers(int numberOfplayers)
+        public void CreatePlayers(int numberOfPlayers)
         {
             if (numberOfPlayers == 1)
             {
                 playerOne = new HumanPlayer();
                 playerTwo = new ComputerPlayer();
             }
-            else if (numberplayers == 2)
+            else if (numberOfPlayers == 2)
             {
                 playerOne = new HumanPlayer();
                 playerTwo = new HumanPlayer();
