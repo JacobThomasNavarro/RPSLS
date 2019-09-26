@@ -1,0 +1,6 @@
+C:\Users\jt10n\Desktop\devCodeCamp\Week_03\Projects\RPSLS\RPSLS\bin\Debug\RPSLS.exe.config
+C:\Users\jt10n\Desktop\devCodeCamp\Week_03\Projects\RPSLS\RPSLS\bin\Debug\RPSLS.exe
+C:\Users\jt10n\Desktop\devCodeCamp\Week_03\Projects\RPSLS\RPSLS\bin\Debug\RPSLS.pdb
+C:\Users\jt10n\Desktop\devCodeCamp\Week_03\Projects\RPSLS\RPSLS\obj\Debug\RPSLS.csprojAssemblyReference.cache
+C:\Users\jt10n\Desktop\devCodeCamp\Week_03\Projects\RPSLS\RPSLS\obj\Debug\RPSLS.exe
+C:\Users\jt10n\Desktop\devCodeCamp\Week_03\Projects\RPSLS\RPSLS\obj\Debug\RPSLS.pdb

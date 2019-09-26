@@ -24,7 +24,20 @@ namespace RPSLS
         // member methods (CAN DO)
         public void RunGame() // master method
         {
-            // insert methods and code to kick off game
+            DisplayRules();
+
+            int numberOfPlayers = GetNumberOfPlayers();
+
+            CreatePlayers(numberOfPlayers);
+
+            playerOne.MakeMove();
+            playerTwo.MakeMove();
+
+            //put gesture comparisons here
+            DisplayCurrentScore();
+            //put gesture comparison here
+
+            DisplayGameWinner();
         }
         public void DisplayRules()
         {

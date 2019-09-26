@@ -23,7 +23,7 @@ namespace RPSLS
         public override void ChooseName()
         {
             Console.WriteLine("Choose a name!");
-            name = Console.WriteLine("I am computer!"); ;
+            name = Console.ReadLine();
         }
     }
 }
