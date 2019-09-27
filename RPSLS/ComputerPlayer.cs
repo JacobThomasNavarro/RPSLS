@@ -22,8 +22,7 @@ namespace RPSLS
         }
         public override void ChooseName()
         {
-            Console.WriteLine("Please enter a computer player name.");
-            name = Console.ReadLine();
+            name = "Computer";
         }
     }
 }

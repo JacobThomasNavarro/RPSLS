@@ -22,7 +22,7 @@ namespace RPSLS
         }
         public override void ChooseName()
         {
-            Console.WriteLine("Human choose a name!");
+            Console.WriteLine("Player choose a name!");
             name = Console.ReadLine();
         }
     }

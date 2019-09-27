@@ -78,11 +78,11 @@ namespace RPSLS
         {
             if(playerOne.score > playerTwo.score)
             {
-                Console.WriteLine("Player One won the game!");
+                Console.WriteLine(playerOne.name +  " won the game!");
             }
             else
             {
-                Console.WriteLine("Player Two won the game!");
+                Console.WriteLine(playerTwo.name + " won the game!");
             }
         }
         public int GetNumberOfPlayers()
@@ -104,32 +104,5 @@ namespace RPSLS
                 playerTwo = new HumanPlayer();
             }
         }
-        public void PlayGame()
-        {
-            if((playerOne.gesture == "rock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "rock" && playerTwo.gesture == "lizard"))
-            {
-                playerOne.score++;
-            }
-            else if((playerOne.gesture == "scissors" && playerTwo.gesture == "paper") || (playerOne.gesture == "scissor" && playerTwo.gesture == "lizard"))
-            {
-                playerOne.score++;
-            }
-            else if ((playerOne.gesture == "paper" && playerTwo.gesture == "rock") || (playerOne.gesture == "paper" && playerTwo.gesture == "spock"))
-            {
-                playerOne.score++;
-            }
-            else if ((playerOne.gesture == "lizard" && playerTwo.gesture == "spock") || (playerOne.gesture == "lizard" && playerTwo.gesture == "paper"))
-            {
-                playerOne.score++;
-            }
-            else if ((playerOne.gesture == "spock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "spock" && playerTwo.gesture == "rock"))
-            {
-                playerOne.score++;
-            }
-            else
-            {
-                playerTwo.score++;
-            }
-        }
-}
+    }
 }
