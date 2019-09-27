@@ -30,12 +30,19 @@ namespace RPSLS
             playerOne.ChooseName();
             playerTwo.ChooseName();
 
+            //string playerOne.gesture = playerOne.gesture;
+            //string playerTwo.gesture = playerTwo.gesture;
+
             while (playerOne.score < 2 && playerTwo.score < 2)
             {
                 playerOne.MakeMove();
                 playerTwo.MakeMove();
 
-                if ((playerOne.gesture == "rock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "rock" && playerTwo.gesture == "lizard"))
+                if(playerOne.gesture == playerTwo.gesture)
+                {
+                    Console.WriteLine("You tied! Choose again.");
+                }
+                else if ((playerOne.gesture == "rock" && playerTwo.gesture == "scissors") || (playerOne.gesture == "rock" && playerTwo.gesture == "lizard"))
                 {
                     playerOne.score++;
                 }
@@ -72,6 +79,7 @@ namespace RPSLS
         public void DisplayCurrentScore()
         {
             Console.WriteLine("Current score: " + playerOne.name + ":" + playerOne.score + " " + playerTwo.name + ":" + playerTwo.score);
+           // Console.WriteLine($"Current Score: {playerOne.name}:{playerOne.score}/n{playerTwo.}:{playerTwo.}");
         }
         public void DisplayGameWinner()
         {
