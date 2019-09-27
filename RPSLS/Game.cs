@@ -11,12 +11,11 @@ namespace RPSLS
         // member variables (HAS A)
         public Player playerOne;
         public Player playerTwo;
-        public List<string> gestureOptions;
 
         // constructor
         public Game()
         {
-            gestureOptions = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
+       
         }
 
         // member methods (CAN DO)
@@ -72,7 +71,7 @@ namespace RPSLS
         }
         public void DisplayCurrentScore()
         {
-            Console.WriteLine("Current score: " + playerOne.score + " " + playerTwo.score);
+            Console.WriteLine("Current score: " + playerOne.name + ":" + playerOne.score + " " + playerTwo.name + ":" + playerTwo.score);
         }
         public void DisplayGameWinner()
         {

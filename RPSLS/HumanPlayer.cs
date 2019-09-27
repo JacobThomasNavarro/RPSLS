@@ -9,7 +9,7 @@ namespace RPSLS
     class HumanPlayer : Player
     {
         // member variables (HAS A)
-
+        
 
         // constructor
 
